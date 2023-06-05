@@ -15,6 +15,14 @@ We adopt the large-scale PeMS-4W data to demonstrate how to implement LETC model
 ## Model implementations
 Our model is based on a consise NumPy implementation on CPU devices, which is also applicable with CuPy on a GPU device.
 
+```python
+import numpy as np
+import pandas as pd
+
+tensor = np.load('tensor.npz')['arr_0']
+
+```
+
 ## Examples
 
 ## References
