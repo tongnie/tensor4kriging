@@ -30,7 +30,20 @@ Randomized tensor singular value decomposition:
 def r_tsvd():
 
   return x
+```
 
+Temporal graph Fourier transform:
+```python
+def TGFT():
+
+  return x
+```
+
+Conjugate gradient method:
+```python
+def CG():
+
+  return x
 ```
 
 ## Examples
