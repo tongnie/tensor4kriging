@@ -7,6 +7,15 @@
 > This is the code repository for our preprint(manuscript) 'Correlating sparse sensing for network-wide traffic speed estimation: An integrated graph tensor-based kriging approach' submitted to Transportation Research Part C, which is publicly available after publication.
 
 
+## Motivation
+Traffic speed is central to characterizing the fluidity of the road network. Many transportation applications rely
+on it, such as real-time navigation, dynamic route planning, and congestion management. However, due to sparse
+deployment of static sensors or low penetration of mobile sensors, speeds detected are incomplete and far from
+network-wide use. In addition, sensors are prone to error or missing data due to various kinds of reasons, speeds
+from these sensors can become highly noisy. These drawbacks call for effective techniques to recover credible
+estimates from the incomplete data. In this repository we demonstrated a **L**aplacian-**e**nhanced low-rank **t**ensor **c**ompletion (LETC) framework featuring both low-rankness and multi-dimensional correlations for large-scale traffic speed kriging under limited observations. 
+
+
 ## Datasets
 We adopt the large-scale PeMS-4W data to demonstrate how to implement LETC model to perform kriging with missing data imputation.
 - **PeMS-4W**: Large-scale traffic speed data measured by 11160 static sensors from the [performance measurement system](https://pems.dot.ca.gov/) in California. The first four weeks of loop speed data with a 5-min window is pre-processed and available at [zenodo](https://zenodo.org/record/3939793).
