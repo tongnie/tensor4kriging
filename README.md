@@ -16,12 +16,12 @@ from these sensors can become highly noisy. These drawbacks call for effective t
 estimates from the incomplete data. In this repository we demonstrated a **L**aplacian-**e**nhanced low-rank **t**ensor **c**ompletion (LETC) framework featuring both low-rankness and multi-dimensional correlations for large-scale traffic speed kriging under limited observations. 
 
 
-## Datasets
+## Dataset
 We adopt the large-scale PeMS-4W data to demonstrate how to implement LETC model to perform kriging with missing data imputation.
 - **PeMS-4W**: Large-scale traffic speed data measured by 11160 static sensors from the [performance measurement system](https://pems.dot.ca.gov/) in California. The first four weeks of loop speed data with a 5-min window is pre-processed and available at [zenodo](https://zenodo.org/record/3939793).
 
 
-## Model implementations
+## Model implementation
 Our model is based on a consise NumPy implementation on CPU devices, which is also applicable with CuPy on a GPU device. Some key operations are discussed as below:
 
 Prepare tensors:
@@ -55,9 +55,9 @@ def CG():
   return x
 ```
 
-## Examples
+## Example
 
-## References
+## Reference
 
   >Please cite our paper if this repo helps your research.
 
