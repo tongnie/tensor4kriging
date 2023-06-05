@@ -7,10 +7,8 @@
 We adopt the large-scale PeMS-4W data to demonstrate how to implement LETC model to perform kriging with missing data imputation.
 - **PeMS-4W**: Large-scale traffic speed data measured by 11160 static sensors from the [performance measurement system](https://pems.dot.ca.gov/) in California. The first four weeks of loop speed data with a 5-min window is pre-processed and available at [zenodo](https://zenodo.org/record/3939793).
 
-We provide the two datasets in [../Datasets/](https://github.com/tongnie/tensor4kriging/tree/main/dataset).
-The original links for the complete data are given as following.
 
-- [xxx](https://xxx)
+## Model implementations
 
 ## References
 
