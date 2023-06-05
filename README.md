@@ -1,5 +1,5 @@
 ## Spatiotemporal graph-embedded low-rank tensor learning for large-scale traffic speed kriging
-![Python 3.7](https://img.shields.io/badge/Python-3.7-blue.svg)
+![Python 3.8](https://img.shields.io/badge/Python-3.8-blue.svg)
 [![repo size](https://img.shields.io/github/repo-size/xinychen/vars.svg)](https://github.com/xinychen/vars/archive/master.zip)
 
 ## To be completed
