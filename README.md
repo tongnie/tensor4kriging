@@ -1,7 +1,7 @@
 ## Spatiotemporal graph-embedded low-rank tensor learning for large-scale traffic speed kriging
 ![Python 3.8](https://img.shields.io/badge/Python-3.8-blue.svg)
 [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![repo size](https://img.shields.io/github/repo-size)](https://github.com/tongnie/tensor4kriging/archive/master.zip)
+[![repo size](https://img.shields.io/github/repo-size/xinychen/vars.svg)](https://github.com/xinychen/vars/archive/master.zip)
 
 ## To be completed
 > This is the code repository for our preprint(manuscript) 'Correlating sparse sensing for network-wide traffic speed estimation: An integrated graph tensor-based kriging approach' submitted to Transportation Research Part C, which is publicly available after publication.
