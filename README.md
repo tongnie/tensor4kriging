@@ -1,4 +1,3 @@
-# tensor4kriging
 ## Spatiotemporal graph-embedded low-rank tensor learning for large-scale traffic speed kriging.
 ## Coming soon!
 > This is the code repository for our preprint(manuscript) 'Correlating sparse sensing for network-wide traffic speed estimation: An integrated graph tensor-based kriging approach' submitted to Transportation Research Part C, which is publicly available after publication.
@@ -6,12 +5,12 @@
 
 ## Datasets
 In this repository, we have used two small-size traffic flow datasets to show how to implement our model, they are:  
-- **Guangzhou-small**: Speed data with the first 50 locations and the first 15 days. The size is (144 × 50 × 15).
+- **PeMS-4W**: Large-scale traffic speed data measured by 11160 static sensors in . The size is (144 × 50 × 15).
 
-We provide the two datasets in [../Datasets/](https://github.com/tongnie/tensorlib/tree/main/Datasets).
+We provide the two datasets in [../Datasets/](https://github.com/tongnie/tensor4kriging/tree/main/dataset).
 The original links for the complete data are given as following.
 
-- [Guangzhou urban traffic speed data set](https://doi.org/10.5281/zenodo.1205228)
+- [xxx](https://xxx)
 
 ## References
 
