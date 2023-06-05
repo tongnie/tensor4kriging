@@ -20,11 +20,13 @@ The original links for the complete data are given as following.
 bibtex:
 
 ```
-@article{nie2022correlating,
-  title={Correlating sparse sensing for network-wide traffic speed estimation: An integrated graph tensor-based kriging approach},
-  author={Nie, Tong and Qin, Guoyang and Wang, Yunpeng and Sun, Jian},
-  journal={arXiv preprint arXiv:2210.11780},
-  year={2022}
+@misc{nie2023correlating,
+      title={Correlating sparse sensing for large-scale traffic speed estimation: A Laplacian-enhanced low-rank tensor kriging approach}, 
+      author={Tong Nie and Guoyang Qin and Yunpeng Wang and Jian Sun},
+      year={2023},
+      eprint={2210.11780},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML}
 }
 ```
 
