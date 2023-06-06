@@ -55,6 +55,22 @@ def CG():
   return x
 ```
 
+
+```python
+def cal_graph_operator(L):
+    eigenvalues,eigenvectors = np.linalg.eigh(L)
+    inds = np.argsort(eigenvalues)
+    U = eigenvectors[:,inds]
+    
+    return U
+
+def GFT(tensor, U):
+    return np.einsum('kt, ijk -> ijt', U, tensor)  #mode-3 product
+
+def iGFT(tensor, U):
+    return np.einsum('kt, ijt -> ijk', U, tensor)  #mode-3 product(transpose)
+```
+
 ## Example
 
 ## Reference
