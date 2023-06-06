@@ -15,6 +15,10 @@ network-wide use. In addition, sensors are prone to error or missing data due to
 from these sensors can become highly noisy. These drawbacks call for effective techniques to recover credible
 estimates from the incomplete data. In this repository we demonstrated a **L**aplacian-**e**nhanced low-rank **t**ensor **c**ompletion (LETC) framework featuring both low-rankness and multi-dimensional correlations for large-scale traffic speed kriging under limited observations. 
 
+<p align="center">
+<img align="middle" src="graphics/" alt="drawing" width="700">
+</p>
+
 
 ## Dataset
 We adopt the large-scale PeMS-4W data to demonstrate how to implement LETC model to perform kriging with missing data imputation.
