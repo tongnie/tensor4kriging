@@ -57,6 +57,12 @@ tensor = np.load('xxx.npz')
 ```
 
 ## Model implementation
+
+<p align="center">
+<img align="middle" src="graphics/Fig2.png" alt="fig2" width="700">
+</p>
+
+
 Our model is based on a consise NumPy implementation on CPU devices, which is also applicable with CuPy on a GPU device. Some key operations are discussed as below:
 
 Randomized singular value decomposition:
