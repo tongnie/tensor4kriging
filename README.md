@@ -56,11 +56,22 @@ tensor = np.load('xxx.npz')
 
 ```
 
-Randomized tensor singular value decomposition:
+Randomized singular value decomposition:
 ```python
-def r_tsvd():
+def power_iteration(AA, Omega, power_iter = 1):
+    Y = AA @ Omega
+    for q in range(power_iter):
+        Y = AA @ (AA.T @ Y)
+    Q, _ = np.linalg.qr(Y)
+    return Q
 
-  return x
+def rsvd(mat, Omega):
+    A = mat.copy()
+    Q = power_iteration(A, Omega)
+    B = Q.T @ A
+    u_tilde, s, v = np.linalg.svd(B, full_matrices = 0)
+    u = Q @ u_tilde
+    return u, s, v
 ```
 
 Temporal graph Fourier transform:
