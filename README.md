@@ -16,7 +16,7 @@ from these sensors can become highly noisy. These drawbacks call for effective t
 estimates from the incomplete data. In this repository we demonstrated a **L**aplacian-**e**nhanced low-rank **t**ensor **c**ompletion (LETC) framework featuring both low-rankness and multi-dimensional correlations for large-scale traffic speed kriging under limited observations. 
 
 <p align="center">
-<img align="middle" src="graphics/" alt="drawing" width="700">
+<img align="middle" src="graphics/Fig1.png" alt="fig1" width="700">
 </p>
 
 
