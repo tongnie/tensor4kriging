@@ -22,7 +22,7 @@ We adopt the large-scale PeMS-4W data to demonstrate how to implement LETC model
 
 Load graph information:
 
-'''python
+```python
 def load_graph_data(pkl_filename):
     sensor_ids, sensor_id_to_ind, adj_mx = load_pickle(pkl_filename)
     return sensor_ids, sensor_id_to_ind, adj_mx
@@ -40,7 +40,7 @@ def load_pickle(pickle_file):
     return pickle_data
 
 sid, sind, adj = load_graph_data('California-data-set/adj_mat.pkl')
-'''
+```
 
 
 ## Model implementation
