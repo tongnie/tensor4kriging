@@ -1,4 +1,4 @@
-## Spatiotemporal graph-embedded low-rank tensor learning for large-scale traffic speed kriging
+## Spatiotemporal Laplacian-enhanced low-rank tensor learning for large-scale traffic speed kriging
 ![Python 3.8](https://img.shields.io/badge/Python-3.8-blue.svg)
 [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
