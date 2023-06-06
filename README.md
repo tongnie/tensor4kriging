@@ -93,6 +93,44 @@ def iGFT(tensor, U):
     return np.einsum('kt, ijt -> ijk', U, tensor)  #mode-3 product(transpose)
 ```
 
+basic tensor operations:
+```python
+def TensorFromMat(mat,dim):
+    #Construct a 3D tensor from a matrix
+    days_slice = [(start_i,start_i + dim[0]) for start_i in list(range(0,dim[0]*dim[2],dim[0]))]
+    array_list = []
+    for day_slice in days_slice:
+        start_i,end_i = day_slice[0],day_slice[1]
+        array_slice = mat[start_i:end_i,:]
+        array_list.append(array_slice)
+        tensor3d = np.array(np.stack(array_list,axis = 0))
+        tensor3d = np.moveaxis(tensor3d,0,-1)
+        
+    return tensor3d
+
+    
+def Tensor2Mat(tensor):
+    #convert a tensor into a matrix by flattening the 'day' mode to 'time interval'.
+    for k in range(np.shape(tensor)[-1]):
+        if k == 0:
+            stacked = np.vstack(tensor[:,:,k])
+        else:
+            stacked = np.vstack((stacked,tensor[:,:,k]))
+    return stacked
+
+
+def construct_Laplacian(adj):
+    degree = np.diag(np.sum(adj,axis=1))
+    temp = degree-adj
+    if np.allclose(temp,temp.transpose()):
+        Lap = temp.copy()
+    else:
+        print('Error Construction')
+        Lap = None
+    return Lap
+
+```
+
 ## Example
 
 ## Reference
