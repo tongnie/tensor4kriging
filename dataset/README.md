@@ -1,4 +1,4 @@
-We provide the large-scale PeMS speed datasets (nearly 90 million observations) to demonstrate the usage of LETC model. Graph information is also provided for construction of adjacent matrix.
+We provide the large-scale PeMS speed datasets (nearly 90 million observations) to demonstrate the usage of LETC model. Graph information is also provided for construction of adjacent matrix. The original PeMS-4W data can be downloaded from [this link](https://zenodo.org/record/3939793).
 
 - PeMS-4W data set
 
