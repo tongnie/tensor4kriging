@@ -4,7 +4,7 @@
 
 
 ## To be completed
-> This is the code repository for our preprint(manuscript) 'Correlating sparse sensing for network-wide traffic speed estimation: An integrated graph tensor-based kriging approach' submitted to Transportation Research Part C, which is publicly available after publication.
+> This is the code repository for our paper 'Correlating sparse sensing for large-scale traffic speed estimation: A Laplacian-enhanced low-rank tensor kriging approach' that will be published on Transportation Research Part C.
 
 
 ## Motivation
