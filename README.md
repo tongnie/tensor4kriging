@@ -4,7 +4,7 @@
 
 
 ## To be completed
-> This is the code repository for our paper 'Correlating sparse sensing for large-scale traffic speed estimation: A Laplacian-enhanced low-rank tensor kriging approach' that will be published on Transportation Research Part C.
+> This is the code repository for our paper 'Correlating sparse sensing for large-scale traffic speed estimation: A Laplacian-enhanced low-rank tensor kriging approach' that will be published on Transportation Research Part C. The preprint version is available at [arXiv]()
 
 
 ## Motivation
