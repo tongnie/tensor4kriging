@@ -128,8 +128,31 @@ def construct_Laplacian(adj):
         print('Error Construction')
         Lap = None
     return Lap
-
 ```
+
+```python
+def tsvt_gft(tensor, Ug, ta,Omg,is_rsvd):
+    dim = tensor.shape
+    X = np.zeros(dim)
+    tensor = GFT(tensor, Ug)
+    for t in range(dim[2]):
+        if is_rsvd==True:
+            u, s, v = rsvd(tensor[:, :, t].T, Omg)
+            r = len(np.where(s > ta)[0])
+            if r >= 1:
+                s = s[: r]
+                s[: r] = s[: r] - ta
+                X[:, :, t] = (u[:, :r] @ np.diag(s) @ v[:r, :]).T
+        else:
+            u, s, v = np.linalg.svd(tensor[:, :, t], full_matrices = False)
+            r = len(np.where(s > ta)[0])
+            if r >= 1:
+                s = s[: r]
+                s[: r] = s[: r] - ta
+                X[:, :, t] = u[:, : r] @ np.diag(s) @ v[: r, :]
+    return iGFT(X, Ug)
+```
+
 
 ## Example
 
