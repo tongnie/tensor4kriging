@@ -42,10 +42,6 @@ def load_pickle(pickle_file):
 sid, sind, adj = load_graph_data('California-data-set/adj_mat.pkl')
 ```
 
-
-## Model implementation
-Our model is based on a consise NumPy implementation on CPU devices, which is also applicable with CuPy on a GPU device. Some key operations are discussed as below:
-
 Prepare tensors:
 
 ```python
@@ -55,6 +51,9 @@ import pandas as pd
 tensor = np.load('xxx.npz')
 
 ```
+
+## Model implementation
+Our model is based on a consise NumPy implementation on CPU devices, which is also applicable with CuPy on a GPU device. Some key operations are discussed as below:
 
 Randomized singular value decomposition:
 ```python
