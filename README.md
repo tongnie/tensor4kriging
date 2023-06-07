@@ -92,9 +92,31 @@ def TGFT():
 
 Conjugate gradient method:
 ```python
-def CG():
+def update_cg(var, r, q, Aq, rold):
+    alpha = rold / np.inner(q, Aq)
+    var = var + alpha * q
+    r = r - alpha * Aq
+    rnew = np.inner(r, r)
+    q = r + (rnew / rold) * q
+    return var, r, q, rnew
 
-  return x
+
+def ell_z(Z,Lc2,Lr2,rc,rr,mu):
+    ell_z = rc*Z@Lc2 + rr*Lr2@Z +mu*Z
+    return ell_z
+
+def conj_grad_Z(C,Z,Lc2,Lr2,rc,rr,mu,maxiter = 3):
+    dim1, dim2 = Z.shape
+    z = np.reshape(Z, -1, order = 'F')
+    r = np.reshape(C - ell_z(Z,Lc2,Lr2,rc,rr,mu), -1, order = 'F')
+    q = r.copy()
+    rold = np.inner(r, r)
+    for it in range(maxiter):
+        Q = np.reshape(q, (dim1, dim2), order = 'F')
+        Aq = np.reshape(ell_z(Q,Lc2,Lr2,rc,rr,mu), -1, order = 'F')
+        z, r, q, rold = update_cg(z, r, q, Aq, rold)
+        
+    return np.reshape(z, (dim1, dim2), order = 'F')
 ```
 
 
