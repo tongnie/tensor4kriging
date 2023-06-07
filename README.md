@@ -178,7 +178,7 @@ def tsvt_gft(tensor, Ug, ta,Omg,is_rsvd):
 
 Performing kriging on the California sensor network:
 <p align="center">
-<img align="middle" src="graphics/Fig9_.png" alt="fig9" width="600">
+<img align="middle" src="graphics/Fig9_.png" alt="fig9" width="800">
 </p>
 
 ## Reference
