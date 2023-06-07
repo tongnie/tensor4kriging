@@ -100,7 +100,6 @@ def update_cg(var, r, q, Aq, rold):
     q = r + (rnew / rold) * q
     return var, r, q, rnew
 
-
 def ell_z(Z,Lc2,Lr2,rc,rr,mu):
     ell_z = rc*Z@Lc2 + rr*Lr2@Z +mu*Z
     return ell_z
