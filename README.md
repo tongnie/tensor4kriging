@@ -176,6 +176,11 @@ def tsvt_gft(tensor, Ug, ta,Omg,is_rsvd):
 
 ## Example
 
+Performing kriging on the California sensor network:
+<p align="center">
+<img align="middle" src="graphics/Fig9_.png" alt="fig9" width="600">
+</p>
+
 ## Reference
 
   >Please cite our paper if this repo helps your research.
