@@ -194,6 +194,15 @@ def tsvt_gft(tensor, Ug, ta,Omg,is_rsvd):
     return iGFT(X, Ug)
 ```
 
+```python
+def temporal_regularizer(T, tau):
+    "shape: (T-tau)*T"
+    ell = np.zeros(T)
+    ell[0] = tau
+    for k in range(tau):
+        ell[k + 1] = -1
+    return scipy.linalg.circulant(ell)[tau:,:]
+```
 
 ## Example
 
