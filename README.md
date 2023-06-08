@@ -60,6 +60,8 @@ tensor = np.load('xxx.npz')
 
 ## Model implementation
 
+We resort to the *low-rank tensor completion* model to achieve full-scale traffic speed recovery. However, tensor completion is hard to 
+
 <p align="center">
 <img align="middle" src="graphics/Fig2.png" alt="fig2" width="700">
 </p>
