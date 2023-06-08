@@ -14,8 +14,8 @@ deployment of static sensors or low penetration of mobile sensors, speeds detect
 network-wide use. In addition, sensors are prone to error or missing data due to various kinds of reasons, speeds
 from these sensors can become highly noisy. These drawbacks call for effective techniques to recover credible
 estimates from the incomplete data. In this repository we demonstrated a **L**aplacian-**e**nhanced low-rank **t**ensor **c**ompletion (LETC) framework featuring both *low-rankness and multi-dimensional correlations* for large-scale traffic speed kriging under limited observations. To this end, two challenges are considered in this work:
-- Sparse sensor coverage: only limited road links or locations are equipped with loop detectors;
-- Corrupted data measurements: records at measured locations usually contain missing data at arbitrary time points or even entire time intervals.
+- **Sparse sensor coverage**: only limited road links or locations are equipped with loop detectors;
+- **Corrupted data measurements**: records at measured locations usually contain missing data at arbitrary time points or even entire time intervals.
 
 <p align="center">
 <img align="middle" src="graphics/Fig1.png" alt="fig1" width="700">
