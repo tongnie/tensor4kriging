@@ -60,7 +60,7 @@ tensor = np.load('xxx.npz')
 
 ## Model implementation
 
-We resort to the *low-rank tensor completion* model to achieve full-scale traffic speed recovery. However, tensor completion is hard to 
+We resort to the *low-rank tensor completion (LRTC)* model to achieve full-scale traffic speed recovery. However, LRTC is hard to achieve kriging with low-rank assumption only. In our paper, we enhance LRTC with three Laplacian-induced correlations, named
 
 <p align="center">
 <img align="middle" src="graphics/Fig2.png" alt="fig2" width="700">
