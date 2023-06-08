@@ -67,7 +67,7 @@ We resort to the *low-rank tensor completion* model to achieve full-scale traffi
 </p>
 
 
-Our model is based on a consise NumPy implementation on CPU devices, which is also applicable with CuPy on a GPU device. Some key operations are discussed as below:
+Our model is based on a consise `NumPy` implementation on CPU devices, which is also applicable with `CuPy` on a GPU device. Some key operations are discussed as below:
 
 Randomized singular value decomposition:
 ```python
