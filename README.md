@@ -87,12 +87,6 @@ def rsvd(mat, Omega):
     return u, s, v
 ```
 
-Temporal graph Fourier transform:
-```python
-def TGFT():
-
-  return x
-```
 
 Conjugate gradient method:
 ```python
