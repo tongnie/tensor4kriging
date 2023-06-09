@@ -204,7 +204,7 @@ def temporal_regularizer(T, tau):
 
 ## Example
 
-Performing kriging on the California sensor network:
+Performing kriging on the California sensor network. Road network can be visualized using `geopandas` from `dataset/pems/shape_files`:
 <p align="center">
 <img align="middle" src="graphics/Fig9_.png" alt="fig9" width="800">
 </p>
