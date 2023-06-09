@@ -209,7 +209,7 @@ Performing kriging on the California sensor network:
 <img align="middle" src="graphics/Fig9_.png" alt="fig9" width="800">
 </p>
 
-## Reference
+## Cite us
 
   >Please cite our paper if this repo helps your research.
 
