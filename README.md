@@ -58,7 +58,7 @@ data_raw = pd.read_csv('dataset/pems/pems-4w.csv', header = None)
 speed_mat = data_raw.values.T
 print(speed_mat.shape)
 ```
-The prepared spatiotemporal speed matrix is in the shape of $time point \times  location$.
+The prepared spatiotemporal speed matrix is in the shape of time point $\times$ location.
 
 ## Model implementation
 
