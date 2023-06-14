@@ -48,7 +48,7 @@ def load_pickle(pickle_file):
 sid, sind, adj = load_graph_data('dataset/pems/adj_mat.pkl')
 ```
 
-Prepare tensors:
+Prepare tensors for computation:
 
 ```python
 import numpy as np
