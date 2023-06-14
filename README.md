@@ -54,8 +54,7 @@ Prepare tensors and inject missing observations as well as unobserved links:
 import numpy as np
 import pandas as pd
 
-tensor = np.load('xxx.npz')
-
+dense_tensor = pd.read_csv('dataset/pems/pems-4w.csv', header = None)
 ```
 
 ## Model implementation
