@@ -219,13 +219,14 @@ Performing kriging on the California sensor network. Road network can be visuali
 bibtex:
 
 ```
-@misc{nie2023correlating,
-      title={Correlating sparse sensing for large-scale traffic speed estimation: A Laplacian-enhanced low-rank tensor kriging approach}, 
-      author={Tong Nie and Guoyang Qin and Yunpeng Wang and Jian Sun},
-      year={2023},
-      eprint={2210.11780},
-      archivePrefix={arXiv},
-      primaryClass={stat.ML}
+@article{nie2023correlating,
+  title={Correlating sparse sensing for large-scale traffic speed estimation: A Laplacian-enhanced low-rank tensor kriging approach},
+  author={Nie, Tong and Qin, Guoyang and Wang, Yunpeng and Sun, Jian},
+  journal={Transportation Research Part C: Emerging Technologies},
+  volume={152},
+  pages={104190},
+  year={2023},
+  publisher={Elsevier}
 }
 ```
 
