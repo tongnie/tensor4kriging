@@ -89,7 +89,6 @@ def rsvd(mat, Omega):
     return u, s, v
 ```
 
-
 Conjugate gradient method:
 ```python
 def update_cg(var, r, q, Aq, rold):
@@ -118,7 +117,7 @@ def conj_grad_Z(C,Z,Lc2,Lr2,rc,rr,mu,maxiter = 3):
     return np.reshape(z, (dim1, dim2), order = 'F')
 ```
 
-
+Graph Fourier transform:
 ```python
 def cal_graph_operator(L):
     eigenvalues,eigenvectors = np.linalg.eigh(L)
@@ -149,7 +148,6 @@ def TensorFromMat(mat,dim):
         
     return tensor3d
 
-    
 def Tensor2Mat(tensor):
     #convert a tensor into a matrix by flattening the 'day' mode to 'time interval'.
     for k in range(np.shape(tensor)[-1]):
@@ -171,6 +169,7 @@ def construct_Laplacian(adj):
     return Lap
 ```
 
+Tensor singular value thresholding:
 ```python
 def tsvt_gft(tensor, Ug, ta,Omg,is_rsvd):
     dim = tensor.shape
@@ -192,16 +191,6 @@ def tsvt_gft(tensor, Ug, ta,Omg,is_rsvd):
                 s[: r] = s[: r] - ta
                 X[:, :, t] = u[:, : r] @ np.diag(s) @ v[: r, :]
     return iGFT(X, Ug)
-```
-
-```python
-def temporal_regularizer(T, tau):
-    "shape: (T-tau)*T"
-    ell = np.zeros(T)
-    ell[0] = tau
-    for k in range(tau):
-        ell[k + 1] = -1
-    return scipy.linalg.circulant(ell)[tau:,:]
 ```
 
 ## Example
