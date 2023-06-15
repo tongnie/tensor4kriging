@@ -201,7 +201,7 @@ Road network can be visualized using `geopandas` from `dataset/pems/shape_files`
 <img align="middle" src="graphics/Fig9_.png" alt="fig9" width="800">
 </p>
 
-**Not limited to traffic data, LETC model can be applied to any customized or private spatiotemporal datasets (with a pre-defined graph) for missing data imputation or kriging! **
+**Not limited to traffic data, LETC model can be applied to any customized or private spatiotemporal datasets (with a pre-defined graph) for missing data imputation or kriging!**
 
 ## Cite us
 
