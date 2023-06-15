@@ -206,7 +206,7 @@ def temporal_regularizer(T, tau):
 
 ## Example
 
-Performing kriging on the California sensor network. We provide a toy example to demonstrate how to implement our model in this `[notebook](https://github.com/tongnie/tensor4kriging/blob/main/demo/LETC-PeMS-example.ipynb)`.
+Performing kriging on the California sensor network. We provide a toy example to demonstrate how to implement our model in this [notebook](https://github.com/tongnie/tensor4kriging/blob/main/demo/LETC-PeMS-example.ipynb).
 Road network can be visualized using `geopandas` from `dataset/pems/shape_files`:
 <p align="center">
 <img align="middle" src="graphics/Fig9_.png" alt="fig9" width="800">
